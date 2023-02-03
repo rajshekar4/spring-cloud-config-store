@@ -6,6 +6,13 @@ spring:
           uri: https://github.com/rajshekar4/spring-cloud-config-store
           search-paths:
            - '*service'
-
-
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test
+    username: root
+    password: Qwerty@123
+  jpa:
+    hibernate.ddl-auto: update
+    generate-ddl: true
+    show-sql: true
 
